@@ -35,3 +35,22 @@ const info = [
 ];
 
 console.log(info);
+
+// Creo le card utilizzando un ciclo for
+let cardsHTML = "";
+for (let i = 0; i < info.length; i++) {
+  const person = info[i];
+  cardsHTML += `
+    <div class="col mt-3">
+      <div class="card" style="width: 18rem">
+        <img src="${person.img}" class="card-img-top" alt="${person.name}" />
+        <div class="card-body">
+          <h5 class="card-title">${person.name}</h5>
+          <p class="card-text">${person.role}</p>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+cardContainer.innerHTML = cardsHTML;
