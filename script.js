@@ -42,7 +42,7 @@ for (let i = 0; i < info.length; i++) {
   const person = info[i];
   cardsHTML += `
     <div class="col mt-3">
-      <div class="card" style="width: 18rem">
+      <div class="card" style="width: 25rem">
         <img src="img/${person.img}" class="card-img-top" alt="${person.name}" />
         <div class="card-body">
           <h5 class="card-title">${person.name}</h5>
